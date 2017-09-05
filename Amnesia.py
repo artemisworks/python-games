@@ -2,22 +2,22 @@
 
 inventory = []
 
-currentRoom = "inside a Hotel Room."
+currentRoom = "inside a hotel room."
 
 rooms = {
-    "inside a Hotel Room.": {
+    "inside a hotel room.": {
         "roomDesc":"This is a non-descript hotel room, as anonymous as any drab\n" \
         "budget motel in the city. There is a faint hum of a central\n" \
         "heating unit and somewhere nearby, a leaky tap is softly dripping.\n" \
         "A grey and tousled double bed dominates the cramped space.\n" \
-        "Exits: north\n",
+        "Exits: north",
     "north":"in the hotel corridor."
     },
     "in the hotel corridor.": {
         "roomDesc":"The narrow corridor stretches past a few more doors\n" \
         "and leads into a dimly-lit fire escape stairwell.\n" \
         "Exits: north, south\n",
-    "south":"inside a Hotel Room.",
+    "south":"inside a hotel room.",
     "north":"in a stairwell."
     },
     "in a stairwell.":{
@@ -118,9 +118,10 @@ rooms = {
     "Florentine Cafe which has been operating for years. It has a few tables out\n" \
     "on the pavement, covered with gingham tablecloths. Most patrons prefer to\n" \
     "sit indoors though, as it is well into autumn now.\n" \
-    "Exits: north, east",
+    "Exits: north, south, east",
     "north":"at the corner of Ken High St and Victoria Rd.",
-    "east":"in the Florentine Cafe."
+    "east":"in the Florentine Cafe.",
+    "south":"on Victoria Rd, outside mansion."
     },
     "in the Florentine Cafe.":{
     "roomDesc":"The cafe interior is actually quite small with space only for a\n" \
@@ -131,39 +132,115 @@ rooms = {
     "Exits: west",
     "west":"at the northern end of Victoria Rd."
     },
+    "on Victoria Rd, outside mansion.":{
+    "roomDesc":"About halfway down Victoria Road, you spy a sprawling mansion whose grand\n" \
+    "facade has been almost obscured by a huge wisteria. Enormous willow trees\n" \
+    "crowd the front garden, affording the occupants maximum privacy. This is\n" \
+    "surrounded by a moderately high brick wall. A brass plaque by the front gate\n" \
+    "reads simply: 'CRYPTIC'.\n"
+    "Exits: north",
+    "north":"at the northern end of Victoria Rd."
+    },
+    "in front garden of mansion.":{
+    "roomDesc":"The front garden of the grand mansion is somewhat overgrown with\n" \
+    "unkempt bushes and towering willow trees that flank the gravel driveway leading\n" \
+    "leading to the house. The main gate to the road lies to your west, which\n" \
+    "you can open easily from the inside.\n" \
+    "Exits: west",
+    "west":"on Victoria Rd, outside mansion."
+    },
+    "in back garden of mansion.":{
+    "roomDesc":"The back garden of the mansion is a pretty planted lawn whose\n" \
+    "centrepiece is a fine marble bust of Lady Cryptic herself. The bust\n" \
+    "is surrounded by a small patchwork of flowers, resembling a crossword.\n" \
+    "There is a large window here through which you can glimpse a capacious,\n" \
+    "well-stocked library.\n" \
+    "Exits: west",
+    "west":"in front garden of mansion."
+    },
+    "in a mansion library.":{
+    "roomDesc":"The shelves of this immense room are lined with leather-bound books\n" \
+    "with arcane titles in gold lettering. But what draws your attention\n" \
+    "is really the impressive mahogany desk by the window. A slim laptop\n" \
+    "and a printer are the only items on the desk. Jagged slivers of glass\n" \
+    "are scattered like tiny jewels all over the plush carpet.\n" \
+    "Exits: south",
+    "south":"in back garden of mansion."
+    },
     "on Hammersmith Rd.":{
     "roomDesc":"Hammersmith Road runs west towards the borough of Hammersmith. The\n" \
     "shops around here are mostly generic but one pub stands out to the north,\n" \
     "the Rabid Cow. It has a hand-painted sign of a black cow frothing at the\n" \
     "mouth hanging above the doorway. It looks like a fairly traditional English\n" \
-    "pub, with windowboxes full of fading pansies.\n" \
-    "Exits: east, north",
-    "east":"at Kensington High St, western end."
+    "pub, its pretty windowboxes replete with fading pansies.\n" \
+    "Exits: east, west, north",
+    "east":"at Kensington High St, western end.",
+    "north":"inside The Rabid Cow pub.",
+    "west":"on Hammersmith Rd, western end."
+    },
+    "inside The Rabid Cow pub.":{
+    "roomDesc":"The pub interior is spacious and dark, with a small fire glowing in\n" \
+    "the brick fireplace. Empty beer glasses have been left uncollected on\n" \
+    "the tables. There are numerous faux leather stools where the locals sit\n" \
+    "and drink their woes away and the bar itself is set off to one side. The\n" \
+    "air in here is pungent with a familiar, malodorous blend of stale beer\n" \
+    "and vomit.\n" \
+    "Exits: south",
+    "south":"on Hammersmith Rd."
+    },
+    "on Hammersmith Rd, western end.":{
+    "roomDesc":"The road runs east from Hammersmith gyratory towards the trendy\n" \
+    "shopping district of Kensington High St. The lugubrious character of the\n" \
+    "quiet buildings around here is not helped by the layer of soot and dust\n" \
+    "deposited over the years. In startling contrast, a brightly painted shop\n" \
+    "lies immediately south, its entrance flanked by a festoon of colourful\n" \
+    "balloons. It's the !!!PARTY!!! shop.\n" \
+    "Exits: east, south",
+    "east":"on Hammersmith Rd.",
+    "south":"in the Party shop."
+    },
+    "in the Party shop.":{
+    "roomDesc":"Standing in the Party Shop, you are amazed at the array of costumes\n" \
+    "and other party paraphernalia stocked on its overburdened shelves.\n" \
+    "You could spend all day here, rooting through the mountains of crepe\n" \
+    "party favours, but you have more important things on your mind and no\n" \
+    "time to waste.\n" \
+    "Exits: north",
+    "north":"on Hammersmith Rd, western end."
     }
 }
 
 items = {
-    "inside a Hotel Room.": ("towel","phone"),
-    "in the hotel corridor.":(),
-    "in a stairwell.":(),
-    "at the bottom of a stairwell.":(),
-    "in a hotel lobby.":(),
-    "at Kensington High St, outside hotel.":(),
-    "at Kensington High St, outside newsagent.":(),
-    "on Church St, southern end.":(),
-    "at Kensington High St, western end.":(),
-    "in Holland Park.":(),
-    "deep in Holland Park.":(),
-    "at the corner of Ken High St and Victoria Rd.":(),
-    "at the northern end of Victoria Rd.":(),
-    "in the Florentine Cafe.":(),
-    "on Hammersmith Rd.":()
+    "inside a hotel room.": ["towel","phone"],
+    "in the hotel corridor.":[],
+    "in a stairwell.":[],
+    "at the bottom of a stairwell.":[],
+    "in a hotel lobby.":[],
+    "at Kensington High St, outside hotel.":[],
+    "at Kensington High St, outside newsagent.":[],
+    "on Church St, southern end.":[],
+    "at Kensington High St, western end.":[],
+    "in Holland Park.":[],
+    "deep in Holland Park.":[],
+    "at the corner of Ken High St and Victoria Rd.":[],
+    "at the northern end of Victoria Rd.":[],
+    "in the Florentine Cafe.":[],
+    "on Hammersmith Rd.":[],
+    "on Hammersmith Rd, western end.":[],
+    "inside The Rabid Cow pub.": ["flyer"],
+    "in the Party shop.":[],
+    "on Victoria Rd, outside mansion.":[],
+    "in front garden of mansion.":[],
+    "in back garden of mansion.":[],
+    "in a mansion library.":["laptop"]
 }
 
 itemDescs = {
     "towel":"This threadbare towel is monogrammed with the initials of the\n" \
             "hotel. It has a slightly moldy odour.",
-    "phone":"A small mobile phone. You can probably use it to make calls.",
+    "phone":"A small, plastic mobile phone. You can probably use it to\n" \
+    "call someone, that is, if you can still remember anyone's number.\n" \
+    "It has one credit left.",
     "newspaper":"The newspaper has the current date printed on the top- 21 Oct 2092.\n" \
     "The headlines are all about the new leader of the world, Goggle's\n" \
     "president and CEO, trialling a new internet search engine that can\n" \
@@ -174,14 +251,26 @@ itemDescs = {
     "too much to contemplate doing a crossworld puzzle so you give up and\n" \
     "close the newspaper.",
     "ball":"This chewy rubber ball is probably a dog's lost toy. You could\n" \
-    "throw it, if you had a dog."
+    "throw it, if you had a dog.",
+    "flyer":"This is an advertisement for a local pizza delivery company.\n" \
+    "Just call 818 for BEST-PIZZA!",
+    "laptop":"This slim computer laptop is really lightweight, with a sleek\n" \
+    "black screen and tiny but functional keyboard. You will need\n" \
+    "to activate it to turn the screen on. There is a post-it note stuck\n" \
+    "on the lid with a pencilled scrawl: 'answer to 12 down'",
+    "ticket":"This is a ticket to Big Sue's fancy dress party. The address is\n" \
+    "33 Church Street.",
+    "mask":"This is a Guy Fawkes mask with eyeholes. You can wear it."
 }
 
 NPCs = {
     "in a hotel lobby.":"Hotel Manager",
     "at Kensington High St, outside newsagent.":"Robot Newsagent",
     "on Church St, southern end.":"Old Beggar",
-    "in the Florentine Cafe.":"Waitress"
+    "in the Florentine Cafe.":"Waitress",
+    "inside The Rabid Cow pub.":"Bartender",
+    "in front garden of mansion.":"German Shepherd",
+    "in the Party shop.":"Kylie"
 }
 
 NPCdescs = {
@@ -210,7 +299,20 @@ NPCdescs = {
     "at the counter all morning without a single customer to serve. She can't wait\n" \
     "for the day she passes her job on to an automaton, for then she'd be free to\n" \
     "indulge her real passion, which is doing crossword puzzles. She is a puzzle\n" \
-    "fiend, much like the rest of the population!"
+    "fiend, much like the rest of the population.",
+    "german shepherd":"This HUGE dog is clearly guarding the mansion. It bares its\n" \
+    "enormous fangs at you as you approach, snapping and growling. You sense it\n" \
+    "can easily take you down if you make a wrong move!",
+    "bartender":"The Bartender is a jolly sort, accustomed to seeing all kinds of\n" \
+    "people drift through his pub, from illustrious nobility to the\n" \
+    "dregs of humanity. It is not clear what end of the scale he sees\n" \
+    "you at, but his blue eyes twinkle when he catches you looking at him.\n" \
+    "Clearly, he has seen you before and witnessed your stellar performance\n" \
+    "before you fell unconscious and lost your memory!",
+    "kylie":"Kylie was named after her great-grandmother and you can tell she's\n" \
+    "unhappy at being called some name that was fashionable over a century ago.\n" \
+    "She is a bubbly, vicacious teenager who simply loves her job here at\n" \
+    "the Party Shop when she's not preoccupied with her boyfriend Jason."
    }
 
 NPCchats = {
@@ -264,13 +366,45 @@ NPCchats = {
                               "The Waitress grumbles: 'It's so boring! I'd rather be doing something fun.'\n",
                               "The Waitress prods you: 'Do you even have money for a coffee?'\n",
                               "'You have to pay, we're not a charity, you know!'\n"
-                              )
+                              ),
+    "inside The Rabid Cow pub.":("The Bartender polishes the bar with a rag and heaves a big, theatrical sigh.",
+                        "'Oh so you're back. Don't think you're getting another drink until you\n" \
+                        "get your head sorted out...'\n",
+                        "The Bartender throws his head back and laughs uproariously. You fail to see the joke.\n",
+                        "'Just remember one thing. Those thugs that messed with you? They work for Big Sue.'\n" \
+                        "'Big Sue is the preeminent geocacher of our times!'\n",
+                        "'Next to crossword puzzles, geocaching is the biggest 'in' thing right now.'\n",
+                        "'That Lady Cryptic who sets the puzzles in all our newspapers is well rolling\n" \
+                        "in dough. Big Sue wants to turn geocaching into a commercial enterprise.'\n",
+                        "'The Mother of all Enterprises! YUGE! She told me so herself.'\n",
+                        "With that, the Bartender rubs his sizeable paunch and laughs again.\n" \
+                        "'If she hadn't fallen and broken her leg, she'd have found that last puzzle\n" \
+                        "cache by now! Anyway, she expects to find it SOON. She's even throwing a\n" \
+                        "huge fancy dress party to celebrate. After all, she thinks she's got it in\n" \
+                        "the bag!'\n",
+                        "The Bartender pauses in his monologue and peers at you again.\n" \
+                        "'Tell you what, you need an aspirin, that's what it is.'\n",
+                        "As he laughs again, your head throbs even more at the thought that Big Sue\n" \
+                        "might actually get the geocache BEFORE you. You need to get your GPS back...\n" \
+                        "and FAST!\n"  
+                                 ),
+    "in the Party shop.":("Kylie smiles brightly and cheerfully: 'Welcome to the Party Shop!'\n",
+                        "'Feel free to browse but remember I'm here to help!'\n",
+                        "Kylie paces around the room, rubbing her stomach.\n",
+                        "'I can't wait for my lunch break. I'm so HUNGRY, I could eat a horse.'\n",
+                        "'But my boss says I have to stay here until 3PM! Arrghh!'\n",
+                        "Kylie rolls her eyes and pouts:\n" \
+                        "'I'll simply DIE if I have to wait until 3PM for lunch!'\n"
+                        )
 }
 
 tasksCompleted = {
     "at Kensington High St, outside newsagent.":False,
     "on Church St, southern end.":False,
-    "deep in Holland Park.":False
+    "deep in Holland Park.":False,
+    "on Victoria Rd, outside mansion.":False,
+    "in back garden of mansion.":False,
+    "in a mansion library":False
 }
 
 def showTitle():
@@ -303,6 +437,26 @@ def showStatus():
     print "You are " + currentRoom
     print "Inventory: " + ", ".join(inventory)
 
+def showHelp():
+    #show basic instructions
+    print """
+           Basic Commands:
+           ---------------
+        look - to check out your environment
+        look at <person> - to look over a person in your environment
+        talk - to communicate with a person in the room
+        get <item> - to pick up an object and move it into your inventory
+        examine <item> - to inspect an item you have in your inventory
+        give <item> to <person> - to give an item to a person in the room
+        status - to show your location and inventory
+        north,south,east,west - to move in that direction
+        help - to show this menu
+        quit - to quit the game 
+
+        Bear in mind there are other commands not listed here that you
+        will need to use in the course of the game.
+
+    """
 
 def moveItemToRoom(roomLocation,itemStr):
     itemsInRoom = list(items[roomLocation])
@@ -343,10 +497,15 @@ while True:
 
     if move[0] == "status":
         showStatus()
+
     if move[0] == "quit":
         #quit game and exit
         print "You return to your boring reality... Goodbye!\n"
         break
+
+    if move[0] == "help":
+        showHelp()
+
     if move[0] == "get":
         if move[1] in items[currentRoom]:
             #if the item is present in the room
@@ -355,9 +514,7 @@ while True:
             itemsInRoom = list(items[currentRoom])
             itemsInRoom.remove(move[1])
             items[currentRoom] = itemsInRoom
-            #Remove the room altogether if all items are gone
-            #if len(itemsInRoom)== 0:
-            #    del items[currentRoom]
+            
         else:
             print "That is not here."
 
@@ -443,5 +600,111 @@ while True:
             else:
                 print "Search what?"
         else:
-            print "It is pointless to spend so much time searching the grass!"
+            print "It is pointless to spend so much time searching around."
+
+    if move[0] == "climb" and len(move) > 1:
+        if move[1] == "wall" and currentRoom == "on Victoria Rd, outside mansion.":
+            if not tasksCompleted[currentRoom]:
+                print "You heave yourself over the wall and land heavily on your feet,\n" \
+                "almost twisting your ankle. Almost immediately, you can hear loud and\n" \
+                "ferocious barking!"
+                currentRoom = "in front garden of mansion."
+            else:
+                print "You heave yourself over the wall and land heavily on your feet,\n" \
+                "almost twisting your ankle. You find yourself in a somewhat overgrown\n" \
+                "front garden."
+                currentRoom = "in front garden of mansion."
+        elif move[1] == "window" and currentRoom == "in back garden of mansion.":
+            if tasksCompleted[currentRoom]:
+                print "Ignoring the jagged, broken shards of glass, you climb into the\n" \
+                "mansion through the open window, feeling like a crack burglar.\n"
+                currentRoom = "in a mansion library."
+            else:
+                print "The window is locked shut, you cannot climb through it, unless...." 
+        else:
+            print "What do you wish to climb?"
+
+    if move[0] == "throw" and len(move) > 1:
+        if move[1] == "ball":
+            if "ball" in inventory:
+                if currentRoom == "in front garden of mansion.":
+                    print "You hurl the ball as hard as you can into a thicket of bramble about\n" \
+                    "forty feet away. The dog stops barking momentarily, and then runs after it!\n" 
+                    print "You are safe, but not for long! You spy a small gap in the hedge nearby,\n" \
+                    "which you could possibly enter."
+                    inventory.remove("ball")
+                    del NPCs["in front garden of mansion."]
+                else:
+                    print "You hurl the ball as hard as you can, and watch it arc into the distance.\n"
+                    inventory.remove("ball")
+            else:
+                print "You don't even have a ball to throw."
+        else:
+            print "You cannot throw that, it would be highly inappropriate."
+
+    if move[0] == "enter" and len(move) > 1:
+        if move[1] in ("gap","hedge") and currentRoom == "in front garden of mansion.":
+            if "in front garden of mansion." in NPCs: 
+                print "You can't move anywhere or the dog might maul you to death!"
+            else:
+                print "You push yourself through the small gap in the hedge. It is a\n" \
+                "tight squeeze but you make it through to the back garden.\n"
+                currentRoom = "in back garden of mansion."
+        else:
+            print "Enter what exactly?"
+
+    if move[0] == "break" and len(move) > 1:
+        if move[1] in ("window","glass") and currentRoom == "in back garden of mansion.":
+            if tasksCompleted[currentRoom]:
+                print "The window is already broken, you vandal!"
+            else:
+                tasksCompleted[currentRoom] = True
+                print "You heave the small bust of Lady Cryptic into the big glass window!"
+                print "There is a satisfyingly LOUD sound of glass smashing into a million\n" \
+                "pieces! You shield yourself from the flying shards.\n"
+        else:
+            print "You'd better not do that here."
+
+    if move[0] == "activate":
+        if "laptop" in inventory:
+            print "You press a key to activate the laptop and the black screen flickers to life."
+            pwd = raw_input("Enter password:")
+            if pwd.strip().lower() == "masquerade":
+                print "Login successful! Downloading email...1 NEW message\n"
+                print "Sender: bigsue@MistressOfGeocaching.com"
+                print "Subject: Let's party!!!!!"
+                print "Output emails to wi-fi printer. *Whirrr, clack*\n"
+                tasksCompleted["in a mansion library."] = True
+                moveItemToRoom("in a mansion library.","ticket")
+            else:
+                print "Login failed.\n"
+                print "The screen suddenly goes black again."
+        else:
+            print "What exactly do you want to activate?"
+
+    if move[0] == "dial":
+        if "phone" in inventory:
+            print "You would be better off typing: call <number>"
+        else:
+            print "You will need a phone to do that."
+
+    if move[0] == "call" and len(move)>1:
+        if "phone" in inventory:
+            if currentRoom == "in the Party shop.":
+                if move[1] == "818":
+                    print "You call BEST-PIZZA and order a takeaway pizza with all the toppings and\n" \
+                    "extra cheese and pepperoni."
+                    print "Kylie jumps for joy! She is so pleased that she decides to show you the\n" \
+                    "latest item in stock, and wants you to have it for free!\n"
+                    moveItemToRoom(currentRoom,"mask")
+                    print "The phone disintegrates in your pocket, having exhausted its useful life.\n" \
+                    "This is built-in obsolescence in action."
+                    inventory.remove("phone")
+                else:
+                    print "You call " + move[1] + " but there is no answer."
+            else:
+                print "There is a right time and place to make that phone call."
+        else:
+            print "But you don't have a phone!"
+               
 
