@@ -72,14 +72,14 @@ rooms = {
     "roomDesc":"This is the southern, trendy end of Church St which becomes edgier\n" \
     "the further north you go. There is a beautiful old church at the corner,\n" \
     "surrounded by a few dilapidated stone tombs. A leafy plane tree\n" \
-    "offers a scrap of shade over the pavement.\n"
+    "offers passers-by a scrap of shade over the pavement.\n"
     "Exits: south, north",
     "south":"at Kensington High St, outside newsagent.",
     "north":"on Church St, northern end."
     },
     "on Church St, northern end.":{
     "roomDesc":"The road narrows a bit further north towards Notting Hill Gate.\n" \
-    "The shops around here specialise in 20th century antique electronics.\n" \
+    "The shops around here specialise in 21st century antique electronics.\n" \
     "If you hunt around, you might even find an early Garmin 250 unit in\n" \
     "mint condition. A tall red-brick building with an entrance porch lies\n" \
     "east. It is mostly unexpectional except you notice all its curtains\n" \
@@ -89,7 +89,7 @@ rooms = {
     "east":"in front of red-brick flats."
     },
     "in front of red-brick flats.":{
-    "roomDesc":"You stand before a tall red-brick building and the front door bears\n" \
+    "roomDesc":"You stand before an anonymous red-brick building and the front door bears\n" \
     "the number '33' in small bronze letters. There are a few buzzers mounted\n" \
     "beside the door, one for each flat in the building.\n" \
     "Exits: west",
@@ -106,7 +106,7 @@ rooms = {
     },
     "in Big Sue's living room.":{
     "roomDesc":"Big Sue's living room is rather untidy, a jumble of furniture, plush\n" \
-    "cushions and geocache containers of all sorts serving as makeshift tables.\n" \
+    "cushions and interesting geocache containers of all shapes and sizes.\n" \
     "There is even a huge pile of parallel sticks arranged in a corner as a\n" \
     "conversation piece. You instinctively feel tempted to search it. Some\n"
     "awful early 2000's music is being pumped through the wi-fi speakers.\n" \
@@ -139,7 +139,7 @@ rooms = {
     },
     "deep in Holland Park.":{
     "roomDesc":"This part of the park has been partly neglected by the robot gardeners,\n" \
-    "perhaps due to a bug in the program, a small triangle of grass has been\n" \
+    "perhaps due to a bug in their algorithm, a small triangle of grass has been\n" \
     "left unmown and it is home to many butterflies in the summer, attracted\n" \
     "by the abundance of wildflowers. The grass is almost knee-high and you\n" \
     "entertain a passing fancy that perhaps you could find your GPS if you\n" \
@@ -298,6 +298,9 @@ itemDescs = {
     "the Daily Crossword on page 3. But you realise your head still throbs\n" \
     "too much to contemplate doing a crossworld puzzle so you give up and\n" \
     "close the newspaper.",
+    "scrap":"This is a torn scrap of yellow note paper on which someone has\n" \
+    "scrawled the numbers: 83... The rest of it has been ripped off. Perhaps\n" \
+    "it is even in your own handwriting but you don't remember.",
     "ball":"This chewy rubber ball is probably a dog's lost toy. You could\n" \
     "throw it, if you had a dog.",
     "flyer":"This is an advertisement for a local pizza delivery company.\n" \
@@ -307,7 +310,7 @@ itemDescs = {
     "to activate it to turn the screen on. There is a post-it note\n" \
     "stuck on the lid with a pencilled scrawl: 'answer to 12 down'",
     "ticket":"This is a ticket to Big Sue's fancy dress party. The address is\n" \
-    "33 Church Street.",
+    "33 Church Street. Dress code: FANCY is MANDATORY.",
     "mask":"This is a blue Did Not Find sad-face mask with eyeholes. It is\n" \
     "designed to completely obscure the face of the wearer.",
     "ammobox":"This ammo box is the Porsche of all geocache containers. Sadly quite\n" \
@@ -315,7 +318,10 @@ itemDescs = {
     "shake it as there is something inside. You might be able to open it.",
     "gps":"This is your trusty GPS unit, back in your hands at last. You can\n" \
     "get it to 'navigate' to your final destination so you can claim the\n" \
-    "geocache and sign the logbook. You hope you can remember your name..."
+    "geocache and sign the logbook. You hope you can remember your name...",
+    "note":"This is a torn note. On it, someone has scrawled the numbers ..58\n" \
+    "but the first half is missing. This must be part of the code\n" \
+    "that Big Sue was looking for!"
 }
 
 NPCs = {
@@ -359,8 +365,8 @@ NPCdescs = {
     "indulge her real passion, which is doing crossword puzzles. She is a puzzle\n" \
     "fiend, much like the rest of the population.",
     "german shepherd":"This HUGE dog is clearly guarding the mansion. It bares its\n" \
-    "enormous fangs at you as you approach, snapping and growling. You sense it\n" \
-    "can easily take you down if you make a wrong move!",
+    "enormous fangs at you as you approach, snapping and growling. You\n" \
+    "sense it can easily take you down if you make a wrong move!",
     "bartender":"The Bartender is a jolly sort, accustomed to seeing all kinds of\n" \
     "people drift through his pub, from illustrious nobility to the\n" \
     "dregs of humanity. It is not clear what end of the scale he sees\n" \
@@ -377,7 +383,7 @@ NPCdescs = {
     "ring with which he likes carving his initials into his victims' cheeks.\n" \
     "Mess with him at your own peril!",
     "signal":"Someone here is dressed up as Signal the Frog. It lumbers about\n" \
-    "a bit awkwardly in the unwieldy costume, holding a glass of punch. It\n" \
+    "a bit awkwardly in the unwieldy costume, gripping a glass of punch. It\n" \
     "sees you and raises its glass in greeting. Cheers and happy geocaching!"
    }
 
@@ -391,14 +397,14 @@ NPCchats = {
                      "'Oh! Don't forget, check-out time is 2PM. Have a nice day!'\n"),
     "on Church St, southern end.":("The Old Beggar eyes you up and down, his dull eyes flicker with recognition.\n",
                                    "'You are a... geocacher? If you aren't, you surely look like one!'\n",
-                                   "'You won't find me rooting around in them bushes! Ha ha!'\n",
-                                   "The Old Beggar lets out a hoarse laugh and then coughs violently into his sleeve.\n",
+                                   "'You won't find me rooting around in them bushes!'\n",
+                                   "The Old Beggar sighs deeply and then coughs violently into his sleeve.\n",
                                    "'I used to drive a taxi, until these bloody self-driving vehicles took over\n" \
                                    "our roads! Totally ruined me, it did. There's no honest work left for\n" \
                                    "people like me.'\n",
                                    "'I ain't got a friend in the world left. Maybe just old Biggs....'\n",
                                    "'He spends his days idling, living off his missus. Lucky sod!'\n",
-                                   "The Old Beggar coughs again and sniffles. Sounds like a bad case of croup."
+                                   "The Old Beggar coughs violently again. Sounds like a bad case of croup."
                                    ),
     "in Holland Park.":("Biggs smiles kindly at you as you greet him uncertainly.",
                         "'Hello, my friend! Feeling better? You had a little too much to drink last night.'\n",
@@ -412,16 +418,21 @@ NPCchats = {
                         "'I guess someone who works for Big Sue heard you and got TOO interested...'\n",
                         "'Don't you know? Big Sue has found EVERY single geocache ever published in\n" \
                         "the country, except this one! She's desperate to get her hands on the\n" \
-                        "coordinates!'",
-                        "Biggs starts to giggle like a child.\n" \
+                        "coordinates!'\n",
+                        "Biggs tries tactfully to stifle a grin.\n" \
                         "'Must have slipped something in your drink. You had a really CRAZY time\n" \
                         "until you fell. Guess those stilletoes were a BAD idea.'\n",
-                        "Biggs barely stifles another giggle at the memory. \n" \
-                        "'Big Sue's heavies rifled through your pockets, must have got\n" \
-                        "your GPS. Don't look at me. I gave up geocaching years ago.\n" \
+                        "Biggs continues with apparent relish at relating the story. \n" \
+                        "'Big Sue's heavies rifled through your pockets, they must have got\n" \
+                        "your GPS. There was a bit of a scuffle.'\n",
+                        "'I did however, manage to save this for you. I don't know what it means\n" \
+                        "but it might be important. It fell from your pocket while you were being\n" \
+                        "roughed up by those chaps.'\n",
+                        "Biggs hands you a torn scrap of paper.\n",
+                        "'I used to hunt geocaches myself, a long time ago. I know how you feel.\n" \
                         "Must admit, I got a tad stroppy when they archived a cache of\n" \
                         "mine without any warning.'\n",
-                        "Biggs allows himself a brief, bitter smirk, and then all is well again.",
+                        "Biggs allows himself a brief, bitter smirk, and then all is well again.\n",
                         "'I took you to a nearby hotel to let you sleep it off.'\n",
                         "'Don't thank me! I'd do it for anyone!'\n"
                         ),
@@ -442,16 +453,16 @@ NPCchats = {
                         "'Next to crossword puzzles, geocaching is the biggest 'in' thing right now.'\n",
                         "'Lady Cryptic who sets the puzzles in all our newspapers is rolling\n" \
                         "in dough. Big Sue wants to turn geocaching into a commercial enterprise,'\n" \
-                        "huge and popular enough to rival even crossword puzzles!",
+                        "huge and popular enough to rival even crossword puzzles!'\n",
                         "'The Mother of all Enterprises! YUGE! She told me so herself.'\n",
-                        "With that, the Bartender pats his sizeable paunch and laughs again.\n" \
-                        "'If she hadn't had to resole her boots, she'd have found that last puzzle\n" \
-                        "cache by now! Anyway, she expects to find it SOON. She's even throwing a\n" \
-                        "huge fancy dress party to celebrate. After all, she thinks she's got it in\n" \
-                        "the bag!'\n",
+                        "With that, the Bartender pats his sizeable paunch and guffaws again.\n" \
+                        "'She told me she just needs to crack some secret code or other, and\n" \
+                        "then she'll find that LAST puzzle cache. Anyway, she expects to\n" \
+                        "do this SOON. She's even throwing a party to celebrate. After all,\n" \
+                        "she thinks she's almost got it all sewn up!'\n",
                         "The Bartender pauses in his monologue and peers at you again.\n" \
                         "'Tell you what, you need an aspirin, that's what it is.'\n",
-                        "As he laughs again, your head throbs even more at the thought that Big Sue\n" \
+                        "As he laughs again, your head aches even more at the thought that Big Sue\n" \
                         "might actually get the geocache before you! You need to get your GPS back...\n" \
                         "and pronto!\n"  
                                  ),
@@ -483,12 +494,16 @@ NPCchats = {
 tasksCompleted = {
     "at Kensington High St, outside newsagent.":False,
     "on Church St, southern end.":False,
+    "FirstScrapGiven":False,
     "deep in Holland Park.":False,
     "on Victoria Rd, outside mansion.":False,
     "in back garden of mansion.":False,
-    "in a mansion library":False,
+    "in a mansion library.":False,
     "WearMask":False,
-    "SearchSticks":False
+    "SearchSticks":False,
+    "OpenAmmobox":False,
+    "SecondScrapGiven":False,
+    "CompleteCode":False
 }
 
 def showTitle():
@@ -572,7 +587,7 @@ while True:
             #There are NPCs in the room
             print NPCs[currentRoom] + " is here."
 
-    if move[0] == "look" and len(move) > 2:
+    elif move[0] == "look" and len(move) > 2:
         npcStr = move[2:]
         npcSearchStr = " ".join(npcStr)
         if npcSearchStr in NPCdescs:
@@ -580,18 +595,18 @@ while True:
         else:
             print "You don't see that here!"
 
-    if move[0] == "status":
+    elif move[0] == "status":
         showStatus()
 
-    if move[0] == "quit":
+    elif move[0] == "quit":
         #quit game and exit
         print "You return to your boring reality... Goodbye!\n"
         break
 
-    if move[0] == "help":
+    elif move[0] == "help":
         showHelp()
 
-    if move[0] == "get":
+    elif move[0] == "get":
         if move[1] in items[currentRoom]:
             #if the item is present in the room
             print "You get a " + move[1] + "."
@@ -603,7 +618,7 @@ while True:
         else:
             print "That is not here."
 
-    if move[0] == "drop" and len(move) > 1:
+    elif move[0] == "drop" and len(move) > 1:
         #check if item is in inventory
         itemToDrop = move[1]
         if itemToDrop in inventory:
@@ -616,7 +631,7 @@ while True:
         else:
             print "You don't have the item on you."
 
-    if move[0] == "examine" and len(move) > 1:
+    elif move[0] == "examine" and len(move) > 1:
         #check if item to examine is in inventory
         itemToExamine = move[1]
         if itemToExamine in inventory:
@@ -626,7 +641,7 @@ while True:
     elif move[0] == "examine" and len(move) < 2:
         print "Examine what?"
 
-    if move[0] in ("north","south","east","west","down","up"):
+    elif move[0] in ("north","south","east","west","down","up"):
         #we are moving in a direction
         moveDir = move[0]
         if moveDir in rooms[currentRoom]:
@@ -637,18 +652,25 @@ while True:
         else:
             print "You cannot go that way!"
 
-    if move[0] == "talk":
+    elif move[0] == "talk":
         if currentRoom in NPCchats:
             dialogue = NPCchats[currentRoom]
             print "You try to strike up a conversation."
             for chat in dialogue:
                 raw_input("....continue....")
                 print chat
-                
+            if currentRoom == "in Holland Park.":
+                if not tasksCompleted["FirstScrapGiven"]:
+                    inventory.append("scrap")
+                    tasksCompleted["FirstScrapGiven"] = True
+
+                    #check if complete code has been obtained
+                    if tasksCompleted["SecondScrapGiven"]:
+                        tasksCompleted["CompleteCode"]=True
         else:
             print "There is no one here to talk to."
 
-    if move[0] == "press":
+    elif move[0] == "press":
         if currentRoom == "at Kensington High St, outside newsagent.":
             if not tasksCompleted[currentRoom]:
                 if move[1] in ("1","2"):
@@ -666,7 +688,7 @@ while True:
         else:
             print "There is nothing here to press."            
 
-    if move[0] == "give" and len(move) > 2:
+    elif move[0] == "give" and len(move) > 2:
         itemToGive = move[1]
         target = " ".join(move[3:])
         if itemToGive not in inventory:
@@ -674,7 +696,7 @@ while True:
         elif currentRoom not in NPCs:
             print "There is no one here to give it to."
         elif target not in ("old beggar","waitress","bouncer"):
-            print "This is not the right place nor time for giving!" 
+            print "You don't really want to do that!" 
         else:
             #check place where this occurs
             if target == "old beggar" and itemToGive == "towel" and currentRoom == "on Church St, southern end.":
@@ -705,7 +727,7 @@ while True:
             else:
                 print "This is not the right place nor time for giving!"
                 
-    if move[0] == "search" and len(move) > 1:
+    elif move[0] == "search" and len(move) > 1:
         if currentRoom == "deep in Holland Park.":
             if not tasksCompleted[currentRoom]:
                 if move[1] == "grass":
@@ -745,7 +767,7 @@ while True:
             else:
                 print "What do you want to search?"
 
-    if move[0] == "climb" and len(move) > 1:
+    elif move[0] == "climb" and len(move) > 1:
         if move[1] == "wall" and currentRoom == "on Victoria Rd, outside mansion.":
             if not tasksCompleted[currentRoom]:
                 print "You heave yourself over the wall and land heavily on your feet,\n" \
@@ -767,7 +789,7 @@ while True:
         else:
             print "What do you wish to climb?"
 
-    if move[0] == "throw" and len(move) > 1:
+    elif move[0] == "throw" and len(move) > 1:
         if move[1] == "ball":
             if "ball" in inventory:
                 if currentRoom == "in front garden of mansion.":
@@ -785,7 +807,7 @@ while True:
         else:
             print "You cannot throw that, it would be highly inappropriate."
 
-    if move[0] == "enter" and len(move) > 1:
+    elif move[0] == "enter" and len(move) > 1:
         if move[1] in ("gap","hedge") and currentRoom == "in front garden of mansion.":
             if "in front garden of mansion." in NPCs: 
                 print "You can't move anywhere or the dog might maul you to death!"
@@ -793,10 +815,18 @@ while True:
                 print "You push yourself through the small gap in the hedge. It is a\n" \
                 "tight squeeze but you make it through to the back garden.\n"
                 currentRoom = "in back garden of mansion."
+        
+        elif move[1] == "window" and currentRoom == "in back garden of mansion.":
+            if tasksCompleted[currentRoom]:
+                print "Ignoring the jagged, broken shards of glass, you climb into the\n" \
+                "mansion through the open window, feeling like a crack burglar.\n"
+                currentRoom = "in a mansion library."
+            else:
+                print "The window is locked shut, you cannot enter it, unless...."
         else:
             print "Enter what exactly?"
 
-    if move[0] == "break" and len(move) > 1:
+    elif move[0] == "break" and len(move) > 1:
         if move[1] in ("window","glass") and currentRoom == "in back garden of mansion.":
             if tasksCompleted[currentRoom]:
                 print "The window is already broken, you vandal!"
@@ -808,30 +838,33 @@ while True:
         else:
             print "You'd better not do that here."
 
-    if move[0] == "activate":
+    elif move[0] == "activate":
         if "laptop" in inventory:
             print "You press a key to activate the laptop and the black screen flickers to life."
             pwd = raw_input("Enter password:")
             if pwd.strip().lower() == "masquerade":
-                print "Login successful! Downloading email...1 NEW message\n"
-                print "Sender: bigsue@MistressOfGeocaching.com"
-                print "Subject: Let's party!!!!!"
-                print "Output emails to wi-fi printer. *Whirrr, clack*\n"
-                tasksCompleted["in a mansion library."] = True
-                moveItemToRoom("in a mansion library.","ticket")
+                if not tasksCompleted["in a mansion library."]:
+                    print "Login successful! Downloading email...1 NEW Message\n"
+                    print "Sender: bigsue@MistressOfGeocaching.com"
+                    print "Subject: Fancy dress party - celebration!"
+                    print "...Sending attachment to wi-fi printer... *Whirrr, clack*\n"
+                    tasksCompleted["in a mansion library."] = True
+                    moveItemToRoom("in a mansion library.","ticket")
+                else:
+                    print "Login successful. No new e-mails."
             else:
                 print "Login failed.\n"
                 print "The screen suddenly goes black again."
         else:
             print "What exactly do you want to activate?"
 
-    if move[0] == "dial":
+    elif move[0] == "dial":
         if "phone" in inventory:
             print "You would be better off typing: call <number>"
         else:
             print "You will need a phone to do that."
 
-    if move[0] == "call" and len(move)>1:
+    elif move[0] == "call" and len(move)>1:
         if "phone" in inventory:
             if currentRoom == "in the Party shop.":
                 if move[1] == "818":
@@ -840,7 +873,7 @@ while True:
                     raw_input("...continue...")
                     print "Kylie jumps for joy! She is so pleased that she decides to show you the\n" \
                     "latest item in stock, and wants you to have it for free since you were so kind\n" \
-                    "to order her a pizza!"
+                    "to order her a pizza! It is in fact, a DNF mask!"
                     moveItemToRoom(currentRoom,"mask")
                     raw_input("...continue...")
                     print "The phone disintegrates in your pocket, having exhausted its useful life.\n" \
@@ -853,12 +886,12 @@ while True:
         else:
             print "But you don't have a phone!"
     
-    if move[0] == "wear" and len(move) > 1:
+    elif move[0] == "wear" and len(move) > 1:
         if move[1] == "mask":
             if "mask" in inventory:
                 if not tasksCompleted["WearMask"]:
                     tasksCompleted["WearMask"] = True
-                    print "You wear the mask. It is certainly an improvement!\n"
+                    print "You wear the mask. It is certainly an improvement!"
                 else:
                     print "You are already wearing the mask."
             else:
@@ -866,15 +899,85 @@ while True:
         else:
             print "You can't wear that, stop mucking around!"
 
-    if move[0] == "open" and len(move) > 1:
+    elif move[0] == "smash":
+      print "Try another word for that?"
+      
+    elif move[0] == "open" and len(move) > 1:
         if move[1] in ("ammobox","box","ammo box"):
-            if "ammobox" in inventory:
+            if "ammobox" in inventory and not tasksCompleted["OpenAmmobox"]:
                 print "You prise open the ammo box and your trusty GPS is lying inside!"
-                print "This is where Big Sue was hiding it all along! You pick up the GPS.\n"
+                print "This is where Big Sue was hiding it all along! You pick up the GPS."
+                print "There is also a torn note which you retrieve.\n"
                 inventory.append("gps")
-            else:
-                print "You don't have the ammobox on you!"
+                inventory.append("note")
+                tasksCompleted["OpenAmmobox"] = True
+                tasksCompleted["SecondScrapGiven"] = True
+
+                if tasksCompleted["FirstScrapGiven"] and tasksCompleted["SecondScrapGiven"]:
+                    tasksCompleted["CompleteCode"] = True
+
+            elif tasksCompleted["OpenAmmobox"]:
+                print "The ammo box is already open."
+            elif "ammobox" not in inventory:
+                print "You don't have the ammo box!"
         else:
             print "You can't open that, sorry."
 
+    elif move[0] == "read":
+        print "You can try to 'examine' the item instead."
 
+    elif move[0] == "navigate":
+        if "gps" in inventory:
+            if tasksCompleted["CompleteCode"]:
+                #WIN GAME
+                print "You press the navigate button on the GPS."
+                print "The screen readout says: \n" \
+                "<< Navigating to N51 29.988  W000 10.806 >>\n"
+                raw_input("...continue...")
+                print "You scurry out onto the streets as fast as your legs will carry you\n" \
+                "and find yourself walking down Kensington High St once again.\n"
+                raw_input("...continue...")
+                print "The last of your headache ebbs away and as you increase your pace along\n" \
+                "the pavement, the memories come flooding back!\n"
+                raw_input("...continue...")
+                print "Your pulse quickens. The road arrives at a junction here, there is a\n" \
+                "mighty statue of a man on a horse. There are embassies around you so you\n" \
+                "are forced to be discreet.\n"
+                raw_input("...continue...")
+                print "Walking further down the road, you remind yourself not to search the\n" \
+                "railings of any private buildings here. Not the railings! Don't arouse\n" \
+                "suspicion or get yourself arrested!\n"
+                raw_input("...continue...")
+                print "You stop at a suitable spot for parking and chaining up a bike,\n" \
+                "close to a shady tree. Looking downwards, you recognise a familiar\n" \
+                "logo... you realise with immense relief that you have regained\n" \
+                "your memory AND found the elusive geocache!\n"
+                raw_input("...continue...")
+                print "All that remains is to work out how to use the secret code...but that\n" \
+                "is no problem for a crack geocacher like you.\n"
+                raw_input("...continue...")
+                print "Now go and write your name in the logbook. For real. This is\n"
+                print """
+    T H E  E N D !
+   
+     _  _
+    (_)_(_)
+     (o o)
+    ==\o/==
+
+Please report any bugs or mice to Artemisworks using
+the usual contact methods.
+
+"""
+                break
+            else:
+                print "You press the navigate button on your GPS..."
+                print "However, you realise that you still need that secret code to\n" \
+                "find the cache. There's still some more work to be done!"
+        else:
+            print "How do you expect to navigate without a GPS?"
+
+
+
+    else:
+        print "What?"
