@@ -497,6 +497,7 @@ tasksCompleted = {
     "FirstScrapGiven":False,
     "deep in Holland Park.":False,
     "on Victoria Rd, outside mansion.":False,
+    "ThrowBall":False,
     "in back garden of mansion.":False,
     "in a mansion library.":False,
     "WearMask":False,
@@ -769,7 +770,7 @@ while True:
 
     elif move[0] == "climb" and len(move) > 1:
         if move[1] == "wall" and currentRoom == "on Victoria Rd, outside mansion.":
-            if not tasksCompleted[currentRoom]:
+            if not tasksCompleted["ThrowBall"]:
                 print "You heave yourself over the wall and land heavily on your feet,\n" \
                 "almost twisting your ankle. Almost immediately, you can hear loud and\n" \
                 "ferocious barking!"
@@ -777,7 +778,7 @@ while True:
             else:
                 print "You heave yourself over the wall and land heavily on your feet,\n" \
                 "almost twisting your ankle. You find yourself in a somewhat overgrown\n" \
-                "front garden."
+                "front garden. There is a gap in the hedge you can enter."
                 currentRoom = "in front garden of mansion."
         elif move[1] == "window" and currentRoom == "in back garden of mansion.":
             if tasksCompleted[currentRoom]:
@@ -798,6 +799,7 @@ while True:
                     print "You are safe, but not for long! You spy a small gap in the hedge nearby,\n" \
                     "which you could possibly enter."
                     inventory.remove("ball")
+                    tasksCompleted["ThrowBall"] = True
                     del NPCs["in front garden of mansion."]
                 else:
                     print "You hurl the ball as hard as you can, and watch it arc into the distance.\n"
